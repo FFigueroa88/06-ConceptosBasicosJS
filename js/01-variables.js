@@ -20,3 +20,17 @@ document.write("<p class='parrafoDestacado'>Esto es una prueba de document.write
 
 // ventanas emergentes 
 alert("Hola Mundo"); 
+
+// solicitar a unno usario su nombre y dar saludo
+const nombreUsuario = prompt("INGRESE SU NOMBRE ");
+
+console.log(nombreUsuario);
+document.write("<p class='parrafoDestacado'>Bienvenido "+ nombreUsuario +'</p>');
+
+
+//solicitar un precio de un producto , pasar de dolares a pesos;
+const precioSolicitado = parseFloat (prompt("INGRESE UN VALOR EN DOLARES "));
+alert("el importe indicado corresponde a US$"+ (precioSolicitado + 2) + " pesos argentinos");
+//console.log(nombreUsuario);
+//document.write("<p class='parrafoDestacado'>Bienvenido "+ nombreUsuario +'</p>');
+
