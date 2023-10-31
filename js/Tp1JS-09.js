@@ -7,9 +7,9 @@ Ejemplo:
 input: Hola mundo
 Output: oauo
 */
-let frase = prompt("Escriba una frase.Se mostrará las vocales usadas");
+const frase = prompt("Escriba una frase.Se mostrará las vocales usadas");
 let n = 0;
-vocales ="";
+let vocales ="";
 while(n < frase.length){
 
     if(frase.charAt(n) == "a" || frase.charAt(n) == "e" || frase.charAt(n) == "i" || frase.charAt(n) == "o" || frase.charAt(n) == "u" || frase.charAt(n) == "A" || frase.charAt(n) == "E" || frase.charAt(n) == "I" || frase.charAt(n) == "O" || frase.charAt(n) == "U" ){

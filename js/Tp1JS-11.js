@@ -10,7 +10,7 @@ Output: El 20 es divisible por 2 y por 5.
 Output: El 210 es divisible por 2, por 3, por 5 y por 7.
 
 */
-let num1 = parseInt(prompt("ingrese número para  saber si es divisible por 2,3,5 o 7"));
+const num1 = parseInt(prompt("ingrese número para  saber si es divisible por 2,3,5 o 7"));
 
 if(!(num1 % 2)){
     document.write("<p class='parrafoDestacado'>El " + num1 + "  es divisible por 2."+'</p>');

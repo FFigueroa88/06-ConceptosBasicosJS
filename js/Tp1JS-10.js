@@ -8,7 +8,7 @@ input: 20
 Output: El 20 es divisible por 2.
 
 */
-let num1 = parseInt(prompt("ingrese número para  saber si es divisible por 2,3,5 o 7"));
+const num1 = parseInt(prompt("ingrese número para  saber si es divisible por 2,3,5 o 7"));
 
 if(!(num1 % 2)){
     document.write("<p class='parrafoDestacado'>El " + num1 + "  es divisible por 2."+'</p>');

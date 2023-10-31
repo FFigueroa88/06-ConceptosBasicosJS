@@ -6,8 +6,8 @@ input: 15 , 3
 Output: El 15 es el número más grande
 
  */
-let num1 = parseInt(prompt("ingrese el primer número a comparar"));
-let num2 = parseInt(prompt("ingrese el segundo número a comparar"));
+const num1 = parseInt(prompt("ingrese el primer número a comparar"));
+const num2 = parseInt(prompt("ingrese el segundo número a comparar"));
 if(num1 < num2){
     document.write("El " + num2 + " es el número mas grande.");
 }
