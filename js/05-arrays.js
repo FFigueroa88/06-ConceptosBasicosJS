@@ -47,7 +47,20 @@ document.write(`</ul>`);
 
 // agregar elemenos al final del array 
 peliculas.push("Gran turismo");
-document.write(`<h2>LISTA DE PELICULAS, con pelicula nueva al final ${peliculas.length} </h2>`);
+document.write(`<h2>LISTA DE PELICULAS, con pelicula nueva al final (${peliculas.length}) </h2>`);
+document.write(`<ul>`);
+for (let indicePeliculas=0;indicePeliculas< peliculas.length; indicePeliculas++){
+
+    document.write(`<li> ${peliculas[indicePeliculas]}</li>`);
+
+}
+
+document.write(`</ul>`);
+
+// modificar elemenos del array
+
+peliculas[6] = "Inception";
+document.write(`<h2>LISTA DE PELICULAS, cambiamos el iten de la posicion 6 del arreglo (${peliculas.length}) </h2>`);
 document.write(`<ul>`);
 for (let indicePeliculas=0;indicePeliculas< peliculas.length; indicePeliculas++){
 
