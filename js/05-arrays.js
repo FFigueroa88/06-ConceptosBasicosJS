@@ -69,3 +69,43 @@ for (let indicePeliculas=0;indicePeliculas< peliculas.length; indicePeliculas++)
 }
 
 document.write(`</ul>`);
+
+//elimunar del primer elemento del array
+
+peliculas.shift();
+
+document.write(`<h2>LISTA DE PELICULAS,  borramos la primer pelicula (${peliculas.length}) </h2>`);
+document.write(`<ul>`);
+for (let indicePeliculas=0;indicePeliculas< peliculas.length; indicePeliculas++){
+
+    document.write(`<li> ${peliculas[indicePeliculas]}</li>`);
+
+}
+
+document.write(`</ul>`);
+
+//eliminar elemenos en medio de aarray 
+peliculas.splice(6,1);
+
+document.write(`<h2>LISTA DE PELICULAS,  borramos el elemento de pos 6 (${peliculas.length}) </h2>`);
+document.write(`<ul>`);
+for (let indicePeliculas=0;indicePeliculas< peliculas.length; indicePeliculas++){
+
+    document.write(`<li> ${peliculas[indicePeliculas]}</li>`);
+
+}
+
+document.write(`</ul>`);
+
+//borrar el ultimo elemento del array
+
+peliculas.pop();
+document.write(`<h2>LISTA DE PELICULAS,  borramos el ultimo elemento del array  (${peliculas.length}) </h2>`);
+document.write(`<ul>`);
+for (let indicePeliculas=0;indicePeliculas< peliculas.length; indicePeliculas++){
+
+    document.write(`<li> ${peliculas[indicePeliculas]}</li>`);
+
+}
+
+document.write(`</ul>`);
