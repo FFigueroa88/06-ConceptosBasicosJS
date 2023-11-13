@@ -161,3 +161,28 @@ for (
 }
 
 document.write(`</ul>`);
+
+peliculas.push(`Jurassic Park 1`, `Jurassic Park 2`);
+peliculas.splice(2, 0, `Jurassic Park 3`);
+mostrarPeliculas(`Agregamos nuevas peliculas de Jurassic Park`);
+
+// filtrar las peliculas de Jurassic Park
+
+const pelisDeJurassicPark = peliculas.filter((pelicula) =>
+  pelicula.includes(`Jurassic`)
+);
+
+// buscar un elemento en el array
+
+const peliBuscada = peliculas.find((itemPelicula)=> itemPelicula === "Interestellar" );
+const peliBuscada2 = peliculas.find((itemPelicula)=> itemPelicula === "Rocky" );
+
+if(peliBuscada2 !== undefined ){
+    document.write(`<p>Pelicula encontrada: ${peliBuscada2} </p>`);    
+}else{
+    document.write(`<p>No se encontró la pelicula buscada </p>`);
+}
+// operador ternario 
+// (condicion logica) ? true: false; 
+
+const respuesta =(peliBuscada2 !== undefined)? `<p>Pelicula encontrada: ${peliBuscada2} </p>` : `<p>No se encontró la pelicula buscada </p>`;
