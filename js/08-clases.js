@@ -38,7 +38,7 @@ class PokemonLegendario extends Pokemon{
     #rareza;
     #ataqueEspecial;
     constructor(nombre , tipo, peso, altura, evolucion , ataques, numPokedex, fuerza,rareza,ataqueEspecial){
-        super();
+        super(nombre , tipo, peso, altura, evolucion , ataques, numPokedex, fuerza);
         this.#rareza =  rareza;
         this.#ataqueEspecial = ataqueEspecial;
     }
